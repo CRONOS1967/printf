@@ -129,7 +129,7 @@ int handle_precision(va_list args, const char *modifier, char *index)
 	(*index)++;
 
 	if ((*modifier <= '0' || *modifier > '9') &&
-	     *modifier != '*')
+		 *modifier != '*')
 	{
 		if (*modifier == '0')
 			(*index)++;
@@ -137,7 +137,7 @@ int handle_precision(va_list args, const char *modifier, char *index)
 	}
 
 	while ((*modifier >= '0' && *modifier <= '9') ||
-	       (*modifier == '*'))
+		   (*modifier == '*'))
 	{
 		(*index)++;
 
